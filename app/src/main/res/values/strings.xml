@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AndroidTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_expandable">Expandable</string>
+    <string name="activity_draggable">Draggable</string>
+    <string name="activity_expandable">Expandable</string>
+
+    <!-- Fragments tags -->
+    <string name="retain_fragment">data provider</string>
+    <string name="list_view_fragment">list view</string>
+    <string name="back_stack">back stack</string>
+    <!-- Fragments tags -->
+
+    <string name="toast_update_ok">Обновлена запись с id - </string>
+    <string name="toast_update_fail">Не обновлена запись с id - </string>
+    <!-- Commands keys -->
+    <string name="list_item_id">ListItemId</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <!-- Commands keys -->
+
+
+</resources>

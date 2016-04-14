@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="ru.androidtest"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".sfClasses.SFApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:label="@string/activity_draggable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.ExpandableActivity"
+            android:label="@string/activity_expandable"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ru.androidtest.ui.activities.MainActivity"/>
+        </activity>
+
+        <provider
+            android:name=".dataBaseLayer.TestProvider"
+            android:authorities="ru.androidtest.dataLayer.provider"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
+
+        <service
+            android:name=".service.SFCommandExecutorService"
+            android:exported="false"
+            android:multiprocess="true">
+        </service>
+
+    </application>
+
+</manifest>

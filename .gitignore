@@ -1,0 +1,14 @@
+*.log
+*.apk
+*.ap_
+*.dex
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+bin/
+gen/
+/build
+/captures
